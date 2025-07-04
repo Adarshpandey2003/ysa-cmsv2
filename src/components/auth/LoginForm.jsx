@@ -11,7 +11,6 @@ export default function LoginForm({
   onEmailChange,
   onPasswordChange,
   onSubmit,
-  onDemo,
 }) {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-blue-300 p-4">
@@ -65,24 +64,6 @@ export default function LoginForm({
             Sign In
           </button>
         </form>
-
-        <div className="mt-6 text-sm text-gray-600">Demo accounts:</div>
-        <div className="mt-2 flex space-x-2">
-          <button
-            type="button"
-            onClick={() => onDemo('Review Team')}
-            className="flex-1 border border-gray-300 rounded-md py-2 hover:bg-gray-50 transition"
-          >
-            Review Team
-          </button>
-          <button
-            type="button"
-            onClick={() => onDemo('Agent')}
-            className="flex-1 border border-gray-300 rounded-md py-2 hover:bg-gray-50 transition"
-          >
-            Agent
-          </button>
-        </div>
       </div>
     </div>
   );
